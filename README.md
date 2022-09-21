@@ -1,2 +1,2 @@
-# javascript-program
+# javascript-tutorial
 learning some work
