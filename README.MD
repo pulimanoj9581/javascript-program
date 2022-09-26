@@ -5,4 +5,4 @@
 - Clear the Add Employee form after adding details to table
 - Delete Employee record from table
 - Edit Employee
-- Label and Button text change for Edit mode
+- Label and Button text change for Edit mode 
