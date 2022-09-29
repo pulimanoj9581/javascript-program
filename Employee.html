@@ -65,7 +65,7 @@
 </form>
 </table>
 </body>
-<Script>
+<script>
 var selectedRow=null;
 var totalSalaries = 0;
 function addRecord() {
@@ -136,21 +136,12 @@ document.getElementById("last_name").value = document.getElementById("employee_t
 document.getElementById("email").value = document.getElementById("employee_table").rows[selected_row_index].cells.item(2).innerHTML;
 document.getElementById("hire").value = document.getElementById("employee_table").rows[selected_row_index].cells.item(3).innerHTML;
 document.getElementById("salary").value = document.getElementById("employee_table").rows[selected_row_index].cells.item(4).innerHTML;
+document.getElementById("submit").innerHTML="Update"
 document.getElementById("submit").value = 'Update employee'
 document.getElementById("title").innerHTML = 'Update employee'
 var table = document.getElementById("employee_table");
 var row = val.parentNode.parentNode;
 table.deleteRow(row.rowIndex);
 }
-function updateemployee()
-{
-var selected_row_index = $(val).closest('td').index()
-document.getElementById("first_name").value = document.getElementById("employee_table").td[selected_row_index].cells.items(0).innerHTML;
-document.getElementById("last_name").value = document.getElementById("employee_table").td[selected_row_index].cells.items(1).innerHTML;
-document.getElementById("email").value = document.getElementById("employee_table").td[selected_row_index].cells.items(2).innerHTML;
-document.getElementById("hire").value = document.getElementById("employee_table").td[selected_row_index].cells.items(3).innerHTML;
-document.getElementById("salry").value = document.getElementById("employee_table").td[selected_row_index].cells.items(4).innerHTML;
-
-}
-</Script>
+</script>
 </html>
