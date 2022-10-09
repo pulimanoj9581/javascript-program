@@ -16,23 +16,28 @@
 </tr>
 <tr>
 <td>First Name</td>
-<td><input type="text" name="firstName" id="firstName"></td>
+<td><input type="text" name="firstName" id="firstName" required oninvalid="this.setCustomValidity('Please Enter First Name')"
+    oninput="this.setCustomValidity('')"/></td>
 </tr>
 <tr>
 <td>Last Name</td>
-<td><input type="text" name="lastName" id="lastName"></td>
+<td><input type="text" name="lastName" id="lastName" required oninvalid="this.setCustomValidity('Please Enter Last Name')"
+    oninput="this.setCustomValidity('')" /></td>
 </tr>
 <tr>
 <td>Email</td>
-<td><input type="text" name="email" id="email"></td>
+<td><input type="email" name="email" id="email" required oninvalid="this.setCustomValidity('Enter valid Email')"
+    oninput="this.setCustomValidity('')"/></td>
 </tr>
 <tr>
 <td>JOB</td>
-<td><input type="text" name="job" id="job"></td>
+<td><input type="text" name="job" id="job" required oninvalid="this.setCustomValidity('Enter Job Profile')"
+    oninput="this.setCustomValidity('')"/></td>
 </td>
 <tr>
 <td>Salary</td>
-<td><input type="text" name="salary" id="salary"></td>
+<td><input type="number" name="salary" id="salary" vaidation="Number" required oninvalid="this.setCustomValidity('Enter Salary')"
+    oninput="this.setCustomValidity('')"/></td>
 </td>
 <tr class="form-action-buttons">
 <td><input type="submit" id="subbtn" value="Add Employee"></td>
